@@ -42,7 +42,7 @@ Everything is for Free!
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 
 
-- ## 🚀 Project Requirements
+- ##  Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
 
