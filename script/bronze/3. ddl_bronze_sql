@@ -1,9 +1,10 @@
-CREATE OR ALTER PROCEDURE bronze.load_broze AS 
-BEGIN
 	/*
 		Now i am going to insert data with Bulk Insert.
 		This is easy and fast way to insert csv files in SQL i belive
 	*/
+
+CREATE OR ALTER PROCEDURE bronze.load_broze AS 
+BEGIN
 
 	TRUNCATE TABLE bronze.crm_cust_info;
 	BULK INSERT bronze.crm_cust_info
