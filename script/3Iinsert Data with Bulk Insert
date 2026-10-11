@@ -1,0 +1,45 @@
+/*
+	Now i am going to insert data with Bulk Insert.
+	This is easy and fast way to insert csv files in SQL i belive
+*/
+
+TRUNCATE TABLE bronze.crm_cust_info;
+BULK INSERT bronze.crm_cust_info
+FROM 'C:\Users\Prakash Singh\OneDrive\Desktop\SQL QUERY\Resume Project\source_crm/cust_info.csv'
+WITH
+(
+	FIRSTROW = 2,
+	FIELDTERMINATOR = ',',
+	TABLOCK
+);
+
+SELECT * FROM bronze.crm_cust_info;
+SELECT COUNT(*)FROM bronze.crm_cust_info;
+
+
+TRUNCATE TABLE bronze.crm_prod_info;
+BULK INSERT bronze.crm_prod_info
+FROM 'C:\Users\Prakash Singh\OneDrive\Desktop\SQL QUERY\Resume Project\source_crm/prd_info.csv'
+WITH
+(
+	FIRSTROW = 2,
+	FIELDTERMINATOR = ',',
+	TABLOCK
+);
+
+SELECT * FROM bronze.crm_prod_info;
+SELECT COUNT(*)FROM bronze.crm_prod_info;
+
+
+TRUNCATE TABLE bronze.crm_sales_details;
+BULK INSERT bronze.crm_sales_details
+FROM 'C:\Users\Prakash Singh\OneDrive\Desktop\SQL QUERY\Resume Project\source_crm/sales_details.csv'
+WITH
+(
+	FIRSTROW = 2,
+	FIELDTERMINATOR = ',',
+	TABLOCK
+);
+
+SELECT * FROM bronze.crm_sales_details;
+SELECT COUNT(*)FROM bronze.crm_sales_details;
