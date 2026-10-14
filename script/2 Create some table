@@ -16,7 +16,7 @@ CREATE TABLE bronze.crm_cust_info
 	cst_key				NVARCHAR(50),
 	cst_firstname		NVARCHAR(50),
 	cst_lastname		NVARCHAR(50),
-	cst_material_status NVARCHAR(50),
+	cst_marital_status  NVARCHAR(50),
 	cst_gendr			NVARCHAR(50),
 	cst_create_dare		DATE
 );
@@ -29,7 +29,7 @@ CREATE TABLE bronze.crm_prod_info
 	prd_cost	 INT,
 	prd_line	 NVARCHAR(50),
 	prd_start_dt DATETIME,
-	prd_emd_dt	 DATETIME
+	prd_end_dt	 DATETIME
 );
 
 CREATE TABLE bronze.crm_sales_details
@@ -51,7 +51,7 @@ Since before this is schema name = 'Bronze'
 This is a data table name 'erp_cust_info'*/
 ==============================================
 
-CREATE TABLE bronze.erp_cust_a101
+CREATE TABLE bronze.erp_loc_a101
 (
 	cid		NVARCHAR(50),
 	cntry	NVARCHAR(50)
