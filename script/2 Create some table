@@ -18,7 +18,7 @@ CREATE TABLE bronze.crm_cust_info
 	cst_lastname		NVARCHAR(50),
 	cst_marital_status  NVARCHAR(50),
 	cst_gendr			NVARCHAR(50),
-	cst_create_dare		DATE
+	cst_create_date		DATE
 );
 
 CREATE TABLE bronze.crm_prod_info
