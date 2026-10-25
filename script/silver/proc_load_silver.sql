@@ -265,4 +265,3 @@ BEGIN
 	PRINT 'Procedure has been complete';
 END
 
---create procedure
